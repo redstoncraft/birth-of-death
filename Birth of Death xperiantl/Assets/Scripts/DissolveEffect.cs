@@ -6,11 +6,15 @@ public class DissolveEffect : MonoBehaviour
 {
     Material material;
 
+    bool isDeDissolving = true;
     bool isDissolving = false;
     float fade = 1f;
 
     [SerializeField]
-    KeyCode dissolve; 
+    KeyCode dissolve;
+    [SerializeField]
+    KeyCode dissolvePS;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -38,5 +42,24 @@ public class DissolveEffect : MonoBehaviour
 
             material.SetFloat("_Fade", fade);
         }
+
+        if (Input.GetKey(dissolvePS))
+        {
+            isDissolving = true;
+        }
+
+        if (isDissolving)
+        {
+            fade -= Time.deltaTime;
+
+            if (fade <= 0f)
+            {
+                fade = 0f;
+                isDissolving = false;
+            }
+
+            material.SetFloat("_Fade", fade);
+        }
+
     }
 }
