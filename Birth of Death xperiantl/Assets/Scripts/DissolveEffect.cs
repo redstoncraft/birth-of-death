@@ -6,7 +6,6 @@ public class DissolveEffect : MonoBehaviour
 {
     Material material;
 
-    bool isDeDissolving = true;
     bool isDissolving = false;
     float fade = 1f;
 
@@ -60,6 +59,8 @@ public class DissolveEffect : MonoBehaviour
 
             material.SetFloat("_Fade", fade);
         }
+
+        
 
     }
 }
