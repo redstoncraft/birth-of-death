@@ -4748,6 +4748,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1202807688174405787}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1159900626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159900628}
+  - component: {fileID: 1159900627}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1159900627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159900626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4c9c317a66dd24880114236af7cd30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 8354cb12f25a2a543ab432249b80240d, type: 3}
+    volume: 0.271
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Coin
+    clip: {fileID: 8300000, guid: 4a465477a71453c4689523030dee3504, type: 3}
+    volume: 0.608
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &1159900628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159900626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1741177, y: 0.021055846, z: -3.2369509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1398184933 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7943420728773563004, guid: 10bafb74214fb8548901982d6dc27561,
@@ -4760,6 +4816,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 977e4d2a9ea8a0448ae294cbaecd5c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1423086186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4519990951425477089, guid: 3a64af77822bf0a4eb094407cb07f319,
+    type: 3}
+  m_PrefabInstance: {fileID: 4519990951774063513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1423086187
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423086186}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1475452975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5437,17 +5595,17 @@ PrefabInstance:
     - target: {fileID: 15064266565146538, guid: ee6f5f8259fb33a43b32d9178dd70fdd,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0006624729
+      value: -0.00066245307
       objectReference: {fileID: 0}
     - target: {fileID: 15064266565146538, guid: ee6f5f8259fb33a43b32d9178dd70fdd,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0011910157
+      value: -0.0011909812
       objectReference: {fileID: 0}
     - target: {fileID: 15064266565146538, guid: ee6f5f8259fb33a43b32d9178dd70fdd,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000007890162
+      value: -0.00000078896977
       objectReference: {fileID: 0}
     - target: {fileID: 15064266565146538, guid: ee6f5f8259fb33a43b32d9178dd70fdd,
         type: 3}
@@ -5776,17 +5934,17 @@ PrefabInstance:
     - target: {fileID: 4870160572408813884, guid: 0ee96ab71d5096944926e01c8efa8e93,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0006624729
+      value: -0.00066245307
       objectReference: {fileID: 0}
     - target: {fileID: 4870160572408813884, guid: 0ee96ab71d5096944926e01c8efa8e93,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0011910157
+      value: -0.0011909812
       objectReference: {fileID: 0}
     - target: {fileID: 4870160572408813884, guid: 0ee96ab71d5096944926e01c8efa8e93,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000007890162
+      value: -0.00000078896977
       objectReference: {fileID: 0}
     - target: {fileID: 4870160572408813884, guid: 0ee96ab71d5096944926e01c8efa8e93,
         type: 3}
